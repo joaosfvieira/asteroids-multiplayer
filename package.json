@@ -1,15 +1,11 @@
 {
-  "name": "basic-mmo-phaser",
+  "name": "asteroids-phaser-multiplayer",
   "version": "1.0.0",
-  "description": " Very basic multiplayer online game example made with Phaser, Node.js and Socket.io ",
+  "description": "  ",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jerenaux/basic-mmo-phaser.git"
   },
   "keywords": [
     "Phaser",
@@ -18,12 +14,7 @@
     "Node.js",
     "socket.io"
   ],
-  "author": "Jerome Renaux",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Jerenaux/basic-mmo-phaser/issues"
-  },
-  "homepage": "https://github.com/Jerenaux/basic-mmo-phaser#readme",
+  "author": "Joao Vieira",
   "dependencies": {
     "express": "^4.15.2",
     "socket.io": "^1.7.3"

@@ -14,7 +14,7 @@ Client.askNewPlayer = function(){
     Client.socket.emit('newplayer');
 };
 
-Client.sendClick = function(x,y){
+Client.sendMovement = function(x,y){
   Client.socket.emit('click',{x:x,y:y});
 };
 
@@ -23,6 +23,8 @@ Client.socket.on('newplayer',function(data){
 });
 
 Client.socket.on('allplayers',function(data){
+    console.log(data);
+    
     for(var i = 0; i < data.length; i++){
         Game.addNewPlayer(data[i].id,data[i].x,data[i].y);
     }
@@ -35,5 +37,6 @@ Client.socket.on('allplayers',function(data){
         Game.removePlayer(id);
     });
 });
+
 
 
