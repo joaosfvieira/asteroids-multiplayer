@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #lobby-container {
+            text-align: center;
+        }
+        #user-list {
+            border: 1px solid #ccc;
+            height: 200px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        #chat-messages {
+            border: 1px solid #ccc;
+            height: 300px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+        }
+        #chat-input {
+            width: 80%;
+            padding: 10px;
+        }
+        #send-message-btn {
+            padding: 10px;
+            cursor: pointer;
+        }
+        #go-to-main-btn {
+            padding: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="lobby-container">
+        <div id="user-list"></div>
+        <div id="chat-messages"></div>
+        <input id="chat-input" type="text" placeholder="Type a message...">
+        <button id="send-message-btn">Send</button>
+        <button id="go-to-main-btn">Play Game</button>
+    </div>
+</body>
+</html>

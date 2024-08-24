@@ -3,8 +3,15 @@ export default class GameOverScene extends Phaser.Scene {
         super('GameOverScene');
     }
 
+    preload() {
+        this.load.audio('gameOverMusic', 'assets/music/gameover.mp3');
+    }
+
     create() {
-        this.sound.stopAll(); // Stops all sounds in the game
+        this.sound.stopAll(); 
+        this.music = this.sound.add('gameOverMusic', { loop: true });
+        this.music.play();
+
         this.cameras.main.fadeIn(1000, 0, 0, 0)
 
         // Add a text to display "Game Over!"
@@ -27,7 +34,7 @@ export default class GameOverScene extends Phaser.Scene {
 
         this.restartButton.setInteractive();
         this.restartButton.on('pointerdown', () => {
-            this.scene.start('ConnectScene');
+            this.scene.start('StartScene');
         });
     }
 }
